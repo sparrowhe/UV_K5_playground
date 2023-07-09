@@ -74,6 +74,6 @@ add_custom_target(${NAME}_flash
 )
 
 add_custom_target(${NAME}_encoded
-	COMMAND python ${PROJECT_SOURCE_DIR}/tools/fw_tools/python-utils/fw_pack.py ${CMAKE_CURRENT_BINARY_DIR}/${NAME}.bin ${CMAKE_CURRENT_SOURCE_DIR}/../orginal_fw/k5_26_encrypted_18to1300MHz.ver.bin ${CMAKE_CURRENT_BINARY_DIR}/${NAME}_encoded.bin
+	COMMAND python ${PROJECT_SOURCE_DIR}/tools/fw_tools/python-utils/fw_pack.py ${CMAKE_CURRENT_BINARY_DIR}/${NAME}.bin ${CMAKE_CURRENT_SOURCE_DIR}/../orginal_fw/k5_3.0.ver.bin ${CMAKE_CURRENT_BINARY_DIR}/${NAME}_encoded.bin
 	DEPENDS ${NAME}
 )
